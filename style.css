@@ -47,6 +47,8 @@ main {
   gap: 20px;
   margin-bottom: 20px;
   margin-left: 200px;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .image-item {
@@ -54,6 +56,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  flex: 1 0 0;
 }
 
 .image-container img {
