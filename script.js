@@ -26,14 +26,14 @@ const config = {
 
       // Reset all images and values
       images.forEach((img) => img.classList.remove("highlighted"));
-      valueTexts.forEach((text) => (text.textContent = ""));
+      valueTexts.forEach((text) => (text.innerHTML = "&nbsp;"));
 
       if (chartElement && chartElement.length > 0) {
         const index = chartElement[0].index;
         const highlightedImage = images[index];
         const valueText = valueTexts[index];
         highlightedImage.classList.add("highlighted");
-        valueText.textContent = `Value: ${data.datasets[0].data[index]} g CO2`;
+        valueText.textContent = `${data.datasets[0].data[index]} g CO2`;
       }
     },
   },
